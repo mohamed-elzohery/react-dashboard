@@ -1,0 +1,42 @@
+.sidebar__item{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: all 300ms ease;
+    border-radius: .8rem;
+    height: 4rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+}
+
+.sidebar__item:hover{
+    cursor: pointer;
+}
+
+.sidebar__title{
+    margin-left: 2rem;
+    font-size: 1rem;
+    flex: 1 0;
+
+}
+
+.sidebar__icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.active{
+    background: var(--activeItem);
+    margin-left: 0;
+    position: relative;
+}
+
+.active::before{
+    position: absolute;
+    content: '';
+    width: .8rem;
+    height: 100%;
+    left: 0;
+    background-color: var(--pink);
+    margin-right: .5rem;
+}

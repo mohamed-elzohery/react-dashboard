@@ -1,9 +1,14 @@
-import './App.css'
+import classes from './App.module.css';
+import MainDash from './conponents/main-dash/MainDash';
+import SideBar from './conponents/sidebar/SideBar';
 
 function App() {
   return (
-    <div className="App">
-        Subscribe Zainkeepscode
+    <div className={classes.app}>
+      <div className={classes["dashboard__container"]}>
+          <SideBar />
+          <MainDash />
+      </div>
     </div>
   );
 }
