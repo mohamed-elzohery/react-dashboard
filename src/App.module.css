@@ -14,7 +14,7 @@
     display: grid;
     flex: 0 0 97%;
     border-radius: 3rem;
-    grid-template-columns: 15rem auto 20rem;
+    grid-template-columns: 15rem auto 25rem;
     gap: 4rem;
     background-color: var(--glass);
 }

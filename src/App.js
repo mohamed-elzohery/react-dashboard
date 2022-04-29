@@ -1,5 +1,6 @@
 import classes from './App.module.css';
 import MainDash from './conponents/main-dash/MainDash';
+import News from './conponents/news/News';
 import SideBar from './conponents/sidebar/SideBar';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className={classes["dashboard__container"]}>
           <SideBar />
           <MainDash />
+          <News />
       </div>
     </div>
   );
