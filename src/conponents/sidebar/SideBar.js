@@ -7,9 +7,11 @@ import {
     UilUsersAlt,
     UilPackage,
     UilChart,
-    UilSignOutAlt
+    UilSignOutAlt,
+    UilBars
 } from '@iconscout/react-unicons';
 import SideBarItem from './SideBarItem';
+import {motion} from 'framer-motion';
 
 const SideBarItems = [
     {
@@ -36,12 +38,24 @@ const SideBarItems = [
 
 const SideBar = () => {
     const [activeIndex, SetActiveIndex] = useState(0);
+    const [expanded, setExpanded] = useState(false);
 
     const onClickHandler = (index) => {
         SetActiveIndex(index);
     }
+
+    const sidebarVariants = {
+        open: {
+            left: '0'
+        },
+        close:{
+            left: '-60%'
+        }
+    }
     
-    return <div className={classes['sidebar']}>
+    return <>
+        <div className={classes['side-btn']} onClick={() => setExpanded(prev => !prev)}><UilBars /></div>
+    <motion.div className={classes['sidebar']} variants={sidebarVariants} animate={expanded ? 'open' : 'close'}>
         <div className={classes['sidebar__logobox']}>
             <img className={classes['sidebar__logo']} src={Logo}  alt='logo' />
             <h1 className={classes['sidebar__header']}>Admin</h1>
@@ -51,7 +65,8 @@ const SideBar = () => {
              (<SideBarItem title={title} Icon={Icon} key={index} isActive={activeIndex === index} onClickAction={onClickHandler.bind(this, index)}/>))}
             <SideBarItem title={"Signout"} Icon={UilSignOutAlt}/>
         </ul>
-    </div>
+    </motion.div>
+    </> 
 }
 
 export default SideBar;

@@ -9,3 +9,22 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+@media only screen and (max-width: 75em){
+    .main-dash__header{
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .main-dash{
+        justify-content: start; 
+    }
+}
+
+@media only screen and (max-width: 48em){
+    .main-dash{
+        width: 37rem;
+    }
+}
+

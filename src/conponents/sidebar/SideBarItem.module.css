@@ -40,3 +40,16 @@
     background-color: var(--pink);
     margin-right: .5rem;
 }
+
+
+@media only screen and (max-width: 75em){
+    .sidebar__title{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 48em){
+    .sidebar__title{
+        display: flex;
+    }
+}

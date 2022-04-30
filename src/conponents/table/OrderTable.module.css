@@ -42,3 +42,19 @@
     background-color: blueviolet;
     color: #FFF;
 }
+
+
+@media only screen and (max-width: 75em){
+    .table{
+        width: 150%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 48em){
+    .table{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+}

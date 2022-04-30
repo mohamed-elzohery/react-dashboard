@@ -8,3 +8,25 @@
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
 }
+
+@media only screen and (max-width: 75em) {
+    .news{
+        justify-content: flex-start;
+        
+    }
+    .news h3{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .news{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .news h3{
+        margin-top: 1rem;
+        text-align: left;
+    }
+}

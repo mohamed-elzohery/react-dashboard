@@ -82,3 +82,20 @@
 .chart-area{
     width: 60rem;
 }
+
+@media only screen and (max-width: 48em){
+    .card--compact{
+        width: 35rem;
+    }
+
+    .chart-area{
+        width: 30rem;
+    }
+
+    .card--expanded{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+

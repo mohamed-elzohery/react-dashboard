@@ -18,3 +18,18 @@
     gap: 4rem;
     background-color: var(--glass);
 }
+
+@media only screen and (max-width: 75em){
+    .dashboard__container{
+        grid-template-columns: 10% 50% auto;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 48em){
+    .dashboard__container{
+        grid-template-columns: 1fr;
+        place-items: center
+        ;
+    }
+}

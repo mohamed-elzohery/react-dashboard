@@ -31,3 +31,51 @@
 .sidebar__list > :last-child{
     margin: auto 0rem 2rem;
 }
+
+.side-btn{
+    display: none;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffe0e0;
+    color: black;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2000;
+
+}
+
+
+@media only screen and (max-width: 75em){
+    .sidebar__logobox{
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 48em){
+    .sidebar{
+        position: fixed;
+        width: 55%;
+        left: 0;
+        top: 0;
+        background-color: #ffe0e0;
+        height: 100%;
+        z-index: 2000;
+    }
+    .sidebar__logobox{
+        margin-bottom: 0rem;
+    }
+
+    .side-btn{
+        display: flex;
+    }
+
+    .side-btn svg{
+        pointer-events: none;
+    }
+}
